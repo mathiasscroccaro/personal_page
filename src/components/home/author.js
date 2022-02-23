@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Image, Figure, Badge } from 'react-bootstrap';
 
-const face = require('../../static/foto.jpg');
+const face = require('../../static/home/foto.jpg');
 
 export const Author = ({ children }) => {
 	let image = (

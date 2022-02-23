@@ -13,7 +13,7 @@ export const Bio = ({ children }) => {
 	const initial_description = (
 		<h4></h4>
 	);
-	
+
 	const Mathias = () => {
 		const style = {
 			'text-align': 'justify',
@@ -52,7 +52,7 @@ export const Bio = ({ children }) => {
 		contact: contact,
 	};
 
-	const content = Object.entries(content_obj).map(([key, value]) => 
+	const content = Object.entries(content_obj).map(([key, value]) =>
 		<Row>
 			<Col xs={12} className='d-flex justify-content-left mt-4' >
 				<h4>~/{key}.sh</h4>

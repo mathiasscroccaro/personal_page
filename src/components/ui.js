@@ -78,11 +78,10 @@ export const Footer = () => {
 
 export const Page = ({children}) => {
 	return (
-		<div>
+		<>
 			<Header />
-				{children}
-			<Footer />
-		</div>
+			{children}
+		</>
 	);
 }
 
