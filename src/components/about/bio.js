@@ -43,7 +43,7 @@ export const Bio = ({ children }) => {
 	}
 
 	const contact = (
-		<p>Feel free to talk to me about anything exposed in this web site. <a><Badge pill bg='danger'>mathias dot scroccaro at gmail dot com</Badge></a></p>
+		<p>Feel free to talk to me about anything exposed in this web site. <a href="mailto:mathias.scroccaro@gmail.com"><Badge pill bg='danger'>mathias.scroccaro@gmail.com</Badge></a></p>
 	);
 
 	const content_obj = {
