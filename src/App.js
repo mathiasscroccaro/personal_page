@@ -4,11 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-import { Home } from './pages/home'
-import { About } from './pages/about'
-import { PreviousWork } from './pages/previous_work'
-import { CV } from './pages/cv'
-import { NotFound } from './pages/not_found'
+import { Home } from './pages/home';
+import { About } from './pages/about';
+import { PreviousWork } from './pages/previous_work';
+import { NotFound } from './pages/not_found';
 
 
 const App = () => {
@@ -24,7 +23,6 @@ const App = () => {
 				<Route path="/home" exact element={<Home/>} />
 				<Route path="/about" element={<About/>} />
 				<Route path="/previous_work" exact element={<PreviousWork/>} />
-				<Route path="/cv" exact element={<CV/>} />
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>

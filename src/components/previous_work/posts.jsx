@@ -1,19 +1,23 @@
 import { useState,useEffect } from 'react';
 import React from 'react';
 import { Container, Row, Col, Figure } from 'react-bootstrap';
+import LazyLoad from 'react-lazyload';
 
 const ScaledImage = ({ children }) => {
 	return (
+		<LazyLoad height={'100%'}>
 		<Row classname='d-flex justify-content-center'>
 			<Col className='d-flex justify-content-center'>
 				<div class='w-75 justify-content-center d-flex'>{children}</div>
 			</Col>
 		</Row>
+		</LazyLoad>
 	);
 }
 
 function createContent() {
 	const torizon = require('../../static/previous_work/torizon.jpg');
+	const taesa = require('../../static/previous_work/taesa.png');
 	const c_screen_1 = require('../../static/previous_work/c_screen_1.jpg');
 	const c_screen_2 = require('../../static/previous_work/c_screen_2.jpg');
 	const circuito_completo = require('../../static/previous_work/circuito_completo_inverso.png');
@@ -33,7 +37,7 @@ function createContent() {
 
 	return [
 		{
-			Title: 'Python containers in low profile hardware (?)',
+			Title: 'Python containers in low profile hardware',
 			Meta: '2022',
 			Text: <>
 			<Row style={{'text-align':'justify'}}>
@@ -43,6 +47,18 @@ function createContent() {
 			<ScaledImage>
 				<Figure><Figure.Image src={String(torizon)} /></Figure>
 			</ScaledImage>
+			</Row>
+			</>
+		},
+		{
+			Title: 'IoT network and its architecture',
+			Meta: '2021',
+			Text: <>
+			<Row style={{'text-align':'justify'}}>
+			<p>In this project, IoT devices were projected to be installed in cable-stayed power transmission lines for variable measurement and fail prediction. The IoT devices connected each other through a WiSUN-FAN mesh network and all gathered data was collected in an embedded Linux gateway. The gateway sent all data to a processing server.</p>
+			<p>I was responsible for designing the software <b>system architecture</b>, modeling the data structs for the <b>Postgres</b> and SQLite databases, configuring <b>Docker</b> containers and the development of all the Python scripts, including the gateway and the server side.</p>
+			<p>Technologies that I was working on: Docker, Python, Python, SQLAlchemy, Postgres, PySerial and embedded Linux sysadmin procedures.</p>
+			<Figure><Figure.Image src={String(taesa)} /></Figure>
 			</Row>
 			</>
 		},

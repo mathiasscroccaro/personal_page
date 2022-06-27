@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Navbar, Nav, Container, Row, Col, Badge, Card, Image, Figure } from 'react-bootstrap';
 
-//import './components.css';
+import pdf from '../static/cv/Resume-Mathias-Scroccaro-Costa.pdf';
+
 
 export const Title = ({ children }) => {
 	let content = (
@@ -50,7 +51,7 @@ export const Header = () => {
 		    <Nav.Link className='px-3' href="/home">home</Nav.Link>
 		    <Nav.Link className='px-3' href="/about">about</Nav.Link>
 		    <Nav.Link className='px-3' href="/previous_work">previous work experience</Nav.Link>
-		    <Nav.Link className='px-3' href="/cv">cv</Nav.Link>
+		    <Nav.Link className='px-3' href={pdf}>cv</Nav.Link>
 		  </Nav>
 		  </Container>
 		</Navbar>
